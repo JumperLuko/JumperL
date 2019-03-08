@@ -1,0 +1,25 @@
+
+<!-- Exibir Todos Posts -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php the_title(); ?><?php the_content(); ?><?php the_author(); ?>
+<?php endwhile; else : ?>
+      <article><p>Sorry, no posts were found!</p></article>
+<?php endif; ?>
+
+<!-- Exibir Conteúdo do Post pesquisando por um ID -->
+<?php $post_id = 1;$queried_post = get_post($post_id);echo $queried_post->post_content; ?>
+
+<!-- Exibir Todos os post da categoria produtos, exibindo 2 por página, exibindo na ordem ASC ou DESC -->
+<?php $my_query = new WP_Query( 'category_name=Produtos&orderby=menu_order&posts_per_page=2&order=ASC' );
+    while ( $my_query->have_posts() ) : $my_query->the_post(); $do_not_duplicate = $post->ID; ?>
+    <div class="col-6 col-b-4 product"><?php the_content(); ?></div>
+<?php endwhile; ?>
+<!-- https://codex.wordpress.org/Class_Reference/WP_Query -->
+<!-- Orderby: menu_order, title, rand, comment_count, meta_value_num. -->
+<!-- post_type: post, page, any, attachment, product, my_custom_post_type... -->
+
+<!-- Painel do Wordpress -->
+<?php wp_footer(); ?>
+
+<!-- Comentário -->
+<?php comments_template(); ?>

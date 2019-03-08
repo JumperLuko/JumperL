@@ -1,0 +1,133 @@
+/*
+Theme Name: JumperLuko
+Theme URI: http://jumperl.com
+Author: JumperLuko (Thiago Augusto)
+Author URI: http://jumperl.com
+Description: My personal site.
+Version: 1.0
+Text Domain: JumperLuko
+*/
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("Raleway-SemiBold.ttf");
+}
+body,html{
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: "Raleway-SemiBold";
+    background: url(cubes.svg) fixed, #f1f4f6;
+}
+::-webkit-scrollbar-track {
+    background-color: #8e9e82;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: #424d23;
+}
+
+.textwidget{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color:#607890;
+}header > a,header > nav{
+    text-decoration: none;
+    color: white;
+    height: 60px;
+}@media only screen and (min-height: 400px) and (min-width: 1000px){
+    header > a,header > nav{
+        height: 100px;
+    }
+}
+header > :target {
+    background-color: #8e9e82;
+}header > a:hover,header > nav:hover{
+    background-color: #8e9e82aa;
+    transition: all 0.1s linear;
+}header > a:target:hover{
+    background-color: #8e9e82;
+    transition: all 0.1s linear;
+}
+
+header .dropdown:hover > .dropdown-sub {
+    background-color: #8e9e82;
+}
+header .dropdown-option{
+    display: flex;
+    height: 60px;
+    text-decoration: none;
+    color: white;
+}@media only screen and (min-height: 400px) and (min-width: 1000px){
+    header .dropdown-option{
+        height: 100px;
+    }
+}
+header .dropdown-option:hover{
+    background-color: #809074;
+}
+
+.title{
+    /* padding: 2vw; */
+    background-color:#8e9e82;
+    color:#ffffff;
+    height: 400px;
+    overflow: hidden;
+    /*background-image:url('');
+    position: fixed;
+    background-size: cover;*/
+}
+
+table td{
+    padding: 0 10px 0 10px;
+}
+
+.content{
+	background: url("cubes.svg");
+}
+[class*="content"]{
+    padding:5vw;
+    background-color: #f1f4f6;
+    color:#000000;
+    overflow: visible;
+}[class*="content"] a{
+    color:#000000;
+    text-decoration: none;
+    text-shadow: #666 3px 3px 4px;
+}
+.content-High{
+    background-color:#424d23;
+    color:#ffffff;
+}.content-High a{
+    color:#ffffff;
+    text-shadow: #000 3px 3px 6px;
+}
+
+.product{
+    color: #000000;
+    padding:0 1%;
+    position: relative;
+    margin: 0 0 2% 0;
+}.product > div{
+    width: 100%;
+    background-color:#00b128;
+}
+.product > div > p{
+    padding: 0 10%;
+}
+.product-more{
+    z-index: 1;
+    padding: 0 10%;
+    background: #D3D3D3;
+    transition: all 0.1s linear;
+}
+.product-more-action{
+    height: 24px;
+}.product-more-action:hover > i{
+    text-shadow: #000 0 0 15px;
+}
