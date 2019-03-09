@@ -16,7 +16,8 @@ body,html{
     padding: 0 !important;
     margin: 0 !important;
     font-family: "Raleway-SemiBold";
-    background: url(cubes.svg) fixed, #f1f4f6;
+    background: #f1f4f6;
+    height:200%;
 }
 ::-webkit-scrollbar-track {
     background-color: #8e9e82;
@@ -40,10 +41,6 @@ header{
     text-decoration: none;
     color: white;
     height: 60px;
-}@media only screen and (min-height: 400px) and (min-width: 1000px){
-    header > a,header > nav{
-        height: 100px;
-    }
 }
 header > :target {
     background-color: #8e9e82;
@@ -63,10 +60,6 @@ header .dropdown-option{
     height: 60px;
     text-decoration: none;
     color: white;
-}@media only screen and (min-height: 400px) and (min-width: 1000px){
-    header .dropdown-option{
-        height: 100px;
-    }
 }
 header .dropdown-option:hover{
     background-color: #809074;
