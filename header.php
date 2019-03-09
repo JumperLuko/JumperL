@@ -27,17 +27,19 @@
     <meta http-equiv="expires" content="Fri, 10 Apr 2018 12:00:00 GMT" />
 </head>
 <body <?php body_class(); ?>>
-<header class="fcol-12 centerW items-center header centerText">
-    <a class="fcol-4 center items-center h3 wow zoomIn" href="<?php echo esc_url( home_url( '/' ) ); ?>#home" id="home">Home</a>
-    <a class="fcol-4 center items-center h3 wow zoomIn" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_jobs/#jobs" id="jobs" title="Visualize o que já foi realizado e alguns serviços em andamento.">Meus Trabalhos</a>
-    <nav class="fcol-4 centerH items-center h5 wow zoomIn dropdown" href="." id="development">
-        <nav class="flex center items-center dropdown-title" title="Área técnica, pode ser um pouco complexo">Desenvolvimento</nav>
-        <nav class="dropdown-sub" style="width:100%;">
-            <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_lab/#development">Laboratório</a>
-            <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_exemples/#development" id="my_exemples">Exemplos</a>
-            <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/references/#development" id="references">Referências</a>
+<header class="fcol-12 items-center">
+    <div class="fcol-12 centerW items-center centerText">
+        <a class="fcol-4 center items-center h3 wow zoomIn" href="<?php echo esc_url( home_url( '/' ) ); ?>#home" id="home">Home</a>
+        <a class="fcol-4 center items-center h3 wow zoomIn" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_jobs/#jobs" id="jobs" title="Visualize o que já foi realizado e alguns serviços em andamento.">Meus Trabalhos</a>
+        <nav class="fcol-4 centerH items-center h5 wow zoomIn dropdown" href="." id="development">
+            <nav class="flex center items-center dropdown-title" title="Área técnica, pode ser um pouco complexo">Desenvolvimento</nav>
+            <nav class="dropdown-sub" style="width:100%;">
+                <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_lab/#development">Laboratório</a>
+                <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/my_exemples/#development" id="my_exemples">Exemplos</a>
+                <a class="fcol-12 center items-center h5 wow zoomIn dropdown-option" href="<?php echo esc_url( home_url( '/' ) ); ?>/index.php/references/#development" id="references">Referências</a>
+            </nav>
         </nav>
-    </nav>
+    </div>
 </header>
 <script>
     function scrollBanner() {

@@ -36,22 +36,26 @@ body,html{
 }
 
 header{
-    background:url(img/cubes.svg),#424d23;
+    background: url(img/cubes.svg),#424d23;
     position: fixed;
-}header > a,header > nav{
+    height: 100px;
+}header > div{
+    background:  #4d2329;
+    height: 60px;
+}header > div > a,header > div  > nav{
     text-decoration: none;
     color: white;
     height: 60px;
 }
-header > :target {
+header > div > :target {
     background-color: #00000053;
-}header > a:hover,header > nav:hover{
+}header > div > a:hover,header > div > nav:hover{
     background-color: #00000077;
     transition: all 0.1s linear;
 }
 
 header .dropdown:hover > .dropdown-sub {
-    background-color: #424d23;
+    background-color: #4d2329; /* #424d23 */
 }
 header .dropdown-option{
     display: flex;
